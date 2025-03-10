@@ -1,11 +1,10 @@
-// Place your key bindings in this file to override the defaults
 [
-    {
+	{
 		"key": "shift+space",
 		"command": "workbench.view.explorer",
 		"when": "viewContainer.workbench.view.explorer.enabled"
 	},
-    {
+	{
 		"key": "ctrl+up",
 		"command": "cursorMove",
 		"args": {
@@ -25,7 +24,7 @@
 		},
 		"when": "editorTextFocus"
 	},
-    {
+	{
 		"key": "ctrl+g",
 		"command": "editor.action.setSelectionAnchor",
 		"when": "editorTextFocus"
@@ -35,9 +34,65 @@
 		"command": "editor.action.selectFromAnchorToCursor",
 		"when": "editorTextFocus && selectionAnchorSet"
 	},
-    {
+	{
 		"key": "ctrl+alt+;",
 		"command": "editor.action.showHover",
 		"when": "editorTextFocus"
 	},
+	{
+		"key": "ctrl+alt+p",
+		"command": "git.pull",
+		"args": {
+			"remote": "origin",
+			"branch": "master"
+		}
+	},
+	{
+		"key": "ctrl+enter",
+		"command": "editor.action.insertLineAfter",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+alt+c",
+		"args": {
+			"command": "multiCommand.copyCurrentWordRight"
+		},
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+cmd+=",
+		"command": "atch.aligncode",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+alt+z",
+		"command": "workbench.action.toggleSidebarVisibility",
+		"when": "explorerViewletVisible"
+	},
+	{
+		"key": "ctrl+alt+b",
+		"command": "git.checkout"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "multiCommand.jumpDown5",
+		"when": "explorerViewletFocus || filesExplorerFocus"
+	  },
+	  {
+		"key": "ctrl+up",
+		"command": "multiCommand.jumpUp5",
+		"when": "explorerViewletFocus || filesExplorerFocus"
+	  },
+	  {
+		"key": "ctrl+alt+n",
+		"command": "explorer.newFile"
+	},
+	{
+		"key": "ctrl+alt+s",
+		"command": "workbench.action.toggleStatusbarVisibility"
+	},
+	{
+        "key": "ctrl+shift+f9",
+        "command": "workbench.debug.viewlet.action.removeAllBreakpoints"
+    }
 ]
