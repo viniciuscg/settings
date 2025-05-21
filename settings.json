@@ -1,82 +1,120 @@
 {
-   // Tema e Estilo
-   "workbench.editor.labelFormat": "short", // Mostra nomes curtos de arquivos no editor.
-   "workbench.startupEditor": "none", // Não exibe editor ao iniciar.
-   "workbench.editor.enablePreview": false, // Desativa a pré-visualização de arquivos no editor.
-   // Editor
-   "editor.fontFamily": "JetBrains Mono, Operator Mono", // Define a fonte do editor.
-   "editor.fontSize": 14, // Tamanho da fonte do editor.
-   "editor.fontLigatures": true, // Ativa ligaduras na fonte.
-   "editor.lineHeight": 1.8, // Altura da linha no editor.
-   "editor.renderLineHighlight": "gutter", // Destaca a linha atual na margem.
-   "editor.guides.bracketPairs": "active", // Exibe guias de emparelhamento de colchetes.
-   "editor.semanticHighlighting.enabled": false, // Desativa realce semântico.
-   "editor.suggestOnTriggerCharacters": true, // Sugere automaticamente ao digitar.
-   "editor.minimap.autohide": true, // Oculta o minimapa automaticamente.
-   "editor.cursorStyle": "block", // Define o estilo do cursor como bloco.
-   "editor.cursorBlinking": "solid", // Cursor piscando de forma sólida.
-   "editor.showFoldingControls": "never", // Oculta controles de dobragem.
-   "editor.matchBrackets": "never", // Desativa destaque de colchetes.
-   "editor.glyphMargin": true, // Ativa a margem de glifos (usada para depuração, etc.).
-   // Terminal
-   "terminal.integrated.fontSize": 13, // Tamanho da fonte do terminal.
-   "terminal.integrated.fontFamily": "SF Pro, JetBrains Mono", // Fonte do terminal.
-   "terminal.integrated.gpuAcceleration": "off", // Desativa a aceleração por GPU para o terminal.
-   // Explorer
-   "editor.lineNumbers": "relative", // Exibe números de linha relativos.
-   "explorer.compactFolders": false, // Exibe estrutura de pastas de forma expandida.
-   "explorer.confirmDelete": false, // Não exibe confirmação ao deletar.
-   "explorer.confirmDragAndDrop": false, // Não exibe confirmação ao arrastar e soltar arquivos.
-   "editor.scrollbar.horizontal": "hidden",
-   "editor.scrollbar.vertical": "hidden",
-   "editor.scrollbar.verticalScrollbarSize": 0,
-   // GitLens
-   "gitlens.currentLine.enabled": true, // Ativa informações de Git na linha atual.
-   "gitlens.hovers.currentLine.details": true, // Exibe detalhes de alterações na linha atual.
-   "gitlens.hovers.currentLine.over": "annotation", // Mostra informações de hover no GitLens.
-   // Emmet
-   "emmet.syntaxProfiles": {
-     "javascript": "jsx" // Configura Emmet para JSX no JavaScript.
-   },
-   // Configurações diversas
-   "window.titleBarStyle": "custom",
-   "files.exclude": {
-     "dist": true, // Exclui a pasta dist do Explorer.
-     ".circleci": true, // Exclui a pasta .circleci do Explorer.
-     ".github": true // Exclui a pasta .github do Explorer.
-   },
-   "files.associations": {
-     "*.md": "note" // Associa arquivos .md a "note".
-   },
-   "security.workspace.trust.untrustedFiles": "newWindow", // Abre arquivos não confiáveis em uma nova janela.
-   "javascript.updateImportsOnFileMove.enabled": "always", // Atualiza automaticamente imports ao mover arquivos JS.
-   "typescript.updateImportsOnFileMove.enabled": "always", // Atualiza automaticamente imports ao mover arquivos TS.
-   // Personalização
-   "workbench.activityBar.location": "hidden", // Oculta a barra de atividade
-   "workbench.colorCustomizations": {
-     "editorRuler.foreground": "#ffffff0a", // Cor personalizada da régua do editor.
-     "editorIndentGuide.background1": "#ffffff01", // Guia de indentação sutil.
-     "tab.activeBackground": "#ffffff0c" // Fundo ativo da aba.
-   },
-   "turboConsoleLog.logMessagePrefix": "🔴", // Prefixo para logs do Turbo Console.
-   "breadcrumbs.enabled": false, // Desativa os breadcrumbs no editor.
-   "window.menuBarVisibility": "toggle",
-   "window.title": "${rootName}",
-   "workbench.editor.showTabs": "none",
-   "workbench.layoutControl.enabled": false,
-   "zenMode.centerLayout": false,
-   "git.suggestSmartCommit": false,
-   "github.copilot.advanced": {
-     "authProvider": "github"
-   },
-   "github.copilot.renameSuggestions.triggerAutomatically": false,
-   "diffEditor.ignoreTrimWhitespace": false,
-   "editor.largeFileOptimizations": false,
-   "[html]": {
+  // Tema e Estilo
+  "workbench.editor.labelFormat": "short", // Mostra nomes curtos de arquivos no editor.
+  "workbench.startupEditor": "none", // Não exibe editor ao iniciar.
+  "workbench.editor.enablePreview": false, // Desativa a pré-visualização de arquivos no editor.
+  // Editor
+  "editor.fontSize": 14, // Tamanho da fonte do editor.
+  "editor.fontLigatures": true, // Ativa ligaduras na fonte.
+  "editor.lineHeight": 1.8, // Altura da linha no editor.
+  "editor.renderLineHighlight": "gutter", // Destaca a linha atual na margem.
+  "editor.guides.bracketPairs": "active", // Exibe guias de emparelhamento de colchetes.
+  "editor.semanticHighlighting.enabled": false, // Desativa realce semântico.
+  "editor.suggestOnTriggerCharacters": true, // Sugere automaticamente ao digitar.
+  "editor.minimap.autohide": true, // Oculta o minimapa automaticamente.
+  "editor.cursorStyle": "block", // Define o estilo do cursor como bloco.
+  "editor.cursorBlinking": "solid", // Cursor piscando de forma sólida.
+  "editor.showFoldingControls": "never", // Oculta controles de dobragem.
+  "editor.matchBrackets": "never", // Desativa destaque de colchetes.
+  "editor.glyphMargin": true, // Ativa a margem de glifos (usada para depuração, etc.).
+  // Terminal
+  "terminal.integrated.fontSize": 13, // Tamanho da fonte do terminal.
+  "terminal.integrated.fontFamily": "SF Pro, JetBrains Mono", // Fonte do terminal.
+  "terminal.integrated.gpuAcceleration": "off", // Desativa a aceleração por GPU para o terminal.
+  // Explorer
+  "editor.lineNumbers": "relative", // Exibe números de linha relativos.
+  "explorer.compactFolders": false, // Exibe estrutura de pastas de forma expandida.
+  "explorer.confirmDelete": false, // Não exibe confirmação ao deletar.
+  "explorer.confirmDragAndDrop": false, // Não exibe confirmação ao arrastar e soltar arquivos.
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.verticalScrollbarSize": 0,
+  // GitLens
+  "gitlens.currentLine.enabled": true, // Ativa informações de Git na linha atual.
+  "gitlens.hovers.currentLine.details": true, // Exibe detalhes de alterações na linha atual.
+  "gitlens.hovers.currentLine.over": "annotation", // Mostra informações de hover no GitLens.
+  // Emmet
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx" // Configura Emmet para JSX no JavaScript.
+  },
+  // Configurações diversas
+  "window.titleBarStyle": "custom",
+  "files.exclude": {
+    "dist": true, // Exclui a pasta dist do Explorer.
+    ".circleci": true, // Exclui a pasta .circleci do Explorer.
+    ".github": true // Exclui a pasta .github do Explorer.
+  },
+  "files.associations": {
+    "*.md": "note" // Associa arquivos .md a "note".
+  },
+  "security.workspace.trust.untrustedFiles": "newWindow", // Abre arquivos não confiáveis em uma nova janela.
+  "javascript.updateImportsOnFileMove.enabled": "always", // Atualiza automaticamente imports ao mover arquivos JS.
+  "typescript.updateImportsOnFileMove.enabled": "always", // Oculta a barra de atividade
+  "turboConsoleLog.logMessagePrefix": "🔴",
+  "workbench.editor.showTabs": "none",
+  "zenMode.centerLayout": false,
+  "git.suggestSmartCommit": false,
+  "github.copilot.advanced": {
+    "authProvider": "github"
+  },
+  "github.copilot.renameSuggestions.triggerAutomatically": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.largeFileOptimizations": false,
+  "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
-   },
-   "[json]": {
-     "editor.defaultFormatter": "esbenp.prettier-vscode"
-},
-"workbench.colorTheme": "Subtle celestial"
- }
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  // "workbench.colorTheme": "Vim Deep Dark",
+  "brainrot-stimulation.videoCategory": "slime",
+  "workbench.activityBar.location": "hidden",
+  "window.menuBarVisibility": "toggle", // Menu only shows when pressing Alt
+  "window.title": "${activeEditorShort}${separator}${rootName}", // Minimal title
+  "workbench.layoutControl.enabled": false, // Disable layout controls
+  "window.commandCenter": false, // Hide command center
+  "window.customTitleBarVisibility": "auto", // Auto-hide title bar
+  // Optional: Make the title bar more minimal
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#1d2021",
+    "titleBar.activeForeground": "#928374",
+    "titleBar.inactiveBackground": "#1d2021",
+    "titleBar.inactiveForeground": "#928374"
+  },
+  "notebook.stickyScroll.enabled": true,
+  "multiCommand.commands": [
+    {
+      "command": "multiCommand.jumpDown5",
+      "sequence": [
+        "list.focusDown",
+        "list.focusDown",
+        "list.focusDown",
+        "list.focusDown",
+        "list.focusDown"
+      ]
+    },
+    {
+      "command": "multiCommand.jumpUp5",
+      "sequence": [
+        "list.focusUp",
+        "list.focusUp",
+        "list.focusUp",
+        "list.focusUp",
+        "list.focusUp",
+      ]
+    }
+  ],
+  // APC
+  "editor.fontFamily": "JetBrains Mono, Consolas, monospace",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "debug.inlineValues": "off",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "remote.SSH.remotePlatform": {
+    "35.153.237.105": "linux"
+  },
+  "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
+  "workbench.iconTheme": "gruvbox-material-icons",
+  "workbench.colorTheme": "Gruvbox Material P Dark",
+}
